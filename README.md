@@ -1,8 +1,10 @@
-# phpstats
+# PhpStats
 A php library containing useful advanced statistic modeling. Helps replace the unsupported PECL stats extension.
 
 
-## Note: this library was created from the NumPy open source library with little modification other than transcoding from python into php.
+## Copyright
+
+Note: this library was created from the NumPy open source library with little modification other than transcoding from python into php.
 
 Copyright © 2005-2013, NumPy Developers.
 All rights reserved.

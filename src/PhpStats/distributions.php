@@ -1,11 +1,11 @@
 <?php
 
-function calculate_mean($data_set = [])
+function calculate_mean($data_set = array())
 {
     return array_sum($data_set) / count($data_set);
 }
 
-function calculate_variance($data_set = [])
+function calculate_variance($data_set = array())
 {
     $mean = calculate_mean($data_set);
 

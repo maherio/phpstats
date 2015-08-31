@@ -22,7 +22,7 @@ class BetaDistributionTest extends PHPUnit_Framework_TestCase
         $a = rand($this->a_minimum, $this->a_maximum);
         $b = rand($this->b_minimum, $this->b_maximum);
 
-        $data_points = [];
+        $data_points = array();
         for($i = 0; $i < $this->number_of_samples; ++$i) {
             $data_points[] = generate_random_beta_variate($a, $b);
         }
@@ -42,7 +42,7 @@ class BetaDistributionTest extends PHPUnit_Framework_TestCase
         $a = rand($this->a_minimum, $this->a_maximum);
         $b = rand($this->b_minimum, $this->b_maximum);
 
-        $data_points = [];
+        $data_points = array();
         for($i = 0; $i < $this->number_of_samples; ++$i) {
             $data_points[] = generate_random_beta_variate($a, $b);
         }

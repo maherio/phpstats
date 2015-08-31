@@ -1,8 +1,37 @@
 # PhpStats
+[![Build Status](https://travis-ci.org/maherio/phpstats.svg)](https://travis-ci.org/maherio/phpstats)
+
 A php library containing useful advanced statistic modeling. Helps replace the unsupported PECL stats extension.
 
+## What's included?
+There are currently helper methods to do the following:
+* Generating random Gaussian, Gamma, and Beta variates
+* Calculating the mean and variance of a data set
 
-## Copyright
+
+## Usage
+To use this library, just install via composer:
+```
+composer require maherio/phpstats
+```
+
+The functions are now globally accessible. Here are a couple examples:
+
+Generate a random beta variate:
+```
+$a = 10;
+$b = 1500;
+$beta_variate = generate_random_beta_variate($a, $b);
+```
+
+Calculate the variance of a data set:
+```
+$data_set = [1,3,5,1,6,15,2,1];
+$variance = calculate_variance($data_set);
+```
+
+
+### Copyright
 
 Note: this library was created from the NumPy open source library with little modification other than transcoding from python into php.
 

@@ -1,11 +1,11 @@
 <?php
 
-function calculate_mean($data_set = [])
+function calculate_mean($data_set = array())
 {
     return array_sum($data_set) / count($data_set);
 }
 
-function calculate_variance($data_set = [])
+function calculate_variance($data_set = array())
 {
     $mean = calculate_mean($data_set);
 
@@ -24,7 +24,7 @@ function generate_random_double($min = 0.0, $max = 1.0)
     return $min + ($decimal * $max);
 }
 
-function generate_random_gaussian_deviate()
+function generate_random_gaussian_variate()
 {
     do {
         $x1 = (2.0 * generate_random_double()) - 1.0;
@@ -88,7 +88,7 @@ function generate_gamma_variate($shape)
         $c = 1.0 / sqrt(9*$b);
         while(true) {
             do {
-                $x = generate_random_gaussian_deviate();
+                $x = generate_random_gaussian_variate();
                 $v = 1.0 + ($c*$x);
             } while($v <= 0.0);
 

@@ -8,7 +8,7 @@ class BetaDistributionTest extends PHPUnit_Framework_TestCase
     protected $b_minimum = 1;
     protected $b_maximum = 10000;
 
-    protected $number_of_samples = 10000;
+    protected $number_of_samples = 500000;
 
     protected $precision = 3; //3 decimal places
 
@@ -42,7 +42,7 @@ class BetaDistributionTest extends PHPUnit_Framework_TestCase
         $a = rand($this->a_minimum, $this->a_maximum);
         $b = rand($this->b_minimum, $this->b_maximum);
 
-        $beta_squared_sum = 0;
+        $data_points = [];
         for($i = 0; $i < $this->number_of_samples; ++$i) {
             $data_points[] = generate_random_beta_variate($a, $b);
         }

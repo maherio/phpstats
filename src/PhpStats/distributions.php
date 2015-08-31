@@ -24,7 +24,7 @@ function generate_random_double($min = 0.0, $max = 1.0)
     return $min + ($decimal * $max);
 }
 
-function generate_random_gaussian_deviate()
+function generate_random_gaussian_variate()
 {
     do {
         $x1 = (2.0 * generate_random_double()) - 1.0;

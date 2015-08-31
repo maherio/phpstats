@@ -1,4 +1,5 @@
 # PhpStats
+[![Build Status](https://travis-ci.org/maherio/phpstats.svg)](https://travis-ci.org/maherio/phpstats)
 A php library containing useful advanced statistic modeling. Helps replace the unsupported PECL stats extension.
 
 ## What's included?
